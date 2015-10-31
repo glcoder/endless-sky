@@ -77,6 +77,7 @@ public:
 	double HullDamage() const;
 	double HeatDamage() const;
 	double IonDamage() const;
+	double MineDamage() const;
 	
 	double TotalLifetime() const;
 	double Range() const;
@@ -125,6 +126,7 @@ private:
 	double hullDamage = 0.;
 	double heatDamage = 0.;
 	double ionDamage = 0.;
+	double mineDamage = 0.;
 	double hitForce = 0.;
 	
 	// Cache the calculation of these values, for faster access.
@@ -132,6 +134,7 @@ private:
 	mutable double totalHullDamage = -1.;
 	mutable double totalHeatDamage = -1.;
 	mutable double totalIonDamage = -1.;
+	mutable double totalMineDamage = -1.;
 	mutable double totalLifetime = -1.;
 };
 

@@ -30,7 +30,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "SpriteShader.h"
 #include "UI.h"
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
 using namespace std;
 

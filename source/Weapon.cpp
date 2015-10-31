@@ -102,6 +102,8 @@ void Weapon::LoadWeapon(const DataNode &node)
 				heatDamage = child.Value(1);
 			else if(child.Token(0) == "ion damage")
 				ionDamage = child.Value(1);
+			else if(child.Token(0) == "mine damage")
+				mineDamage = child.Value(1);
 			else if(child.Token(0) == "hit force")
 				hitForce = child.Value(1);
 			else
@@ -228,6 +230,24 @@ double Weapon::IonDamage() const
 	}
 	return totalIonDamage;
 }
+
+
+
+
+double Weapon::MineDamage() const
+{
+	if(totalMineDamage < 0.)
+	{
+		totalMineDamage = mineDamage;
+		for(const auto &it : submunitions)
+			totalMineDamage += it.first->MineDamage() * it.second;
+	}
+	return totalMineDamage;
+}
+
+
+
+
 
 
 

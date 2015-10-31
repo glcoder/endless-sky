@@ -13,7 +13,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #ifndef PANEL_H_
 #define PANEL_H_
 
-#include <SDL.h>
+#include <SDL2/SDL.h>
 
 class Command;
 class UI;
