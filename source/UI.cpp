@@ -16,7 +16,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "Panel.h"
 #include "Screen.h"
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 using namespace std;
 

@@ -28,7 +28,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "ShipEvent.h"
 #include "System.h"
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 #include <limits>
 #include <cmath>

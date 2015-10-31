@@ -12,7 +12,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 #include "Files.h"
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 #include <sys/stat.h>
 #include <dirent.h>

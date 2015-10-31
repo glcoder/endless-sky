@@ -25,7 +25,7 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 #include "UI.h"
 
 #include "gl_header.h"
-#include <SDL2/SDL.h>
+#include <SDL.h>
 
 using namespace std;
 
